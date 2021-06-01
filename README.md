@@ -10,7 +10,7 @@ Bem, sim e não. "Sim" porque definitivamente pode ser usado como um switch/case
 Para exemplificar, revisitemos alguns exemplos de switch/case em uma linguagem similarmente popular: JavaScript.  
 Pelo bem da simplicidade, tentaremos manter os exemplos simples o suficiente para que não haja uma necessidade adicional de aprender sobre a linguagem em si.
 
-<span style="font-size: 0.8em">Todos os exemplos de JavaScript foram testados no console do navegador Google Chrome, versão 90.0.4430.212</span>
+> Todos os exemplos de JavaScript foram testados no console do navegador Google Chrome, versão 90.0.4430.212
 
 Vamos supor que queiramos implementar um simples fatorial usando switch/case e recursividade em JavaScript. Precisamos:
 - receber um número inteiro como argumento,
@@ -170,7 +170,7 @@ Precisamos destacar dois pontos aqui:
 
 Mudemos um pouco o exemplo. Em vez de continuarmos calculando fatoriais, vamos ver agora como podemos lidar com listas e tuplas\* no contexto do pattern matching. Já sabemos que tanto em Python quanto em JavaScript podemos separar o(s) primeiro(s) elemento(s) de uma lista do resto dela.
 
-<span style="font-size: 0.8em">\* Devido à natureza das tuplas do Python, todos os exemplos usando listas também se aplicam a tuplas.</span>
+> Devido à natureza das tuplas do Python, todos os exemplos usando listas também se aplicam a tuplas.
 
 Se escrevermos:
 
