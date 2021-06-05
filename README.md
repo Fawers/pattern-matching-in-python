@@ -110,8 +110,6 @@ Legal, né? Podemos capturar diversos padrões de uma vez só e executar um só 
 function factorial(n) {
     switch (n) {
         case 0:
-            return 1;
-
         case 1:
             return 1;
 
