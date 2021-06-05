@@ -477,6 +477,49 @@ print(Person('Letícia', 15).is_age_major())
     True
     False
 
+## E quando nenhum dos padrões atende ao valor?
+Algumas liguagens adotaram comportamentos diferentes quanto à checagem de casos. Rust é a mais rígida neste sentido: o programador recebe um erro de compilação caso a checagem não seja exaustiva (ou seja, caso ele não tenha checado todos os padrões possíveis). F# preferiu apenas mostrar um warning ao programador, avisando que alguns padrões não foram cobertos. Se o valor não se encaixar em nenhum padrão, ocorre um erro de tempo de execução (runtime error).
+
+Python é um pouco pouco mais relaxado quanto a isso; se nenhum caso for adequado, o programa simplesmente segue em frente. Do mesmo jeito que uma cadeia de `if`s e `elif`s não precisa de um `else`, um `match` não necessariamente precisa de um `case _`.
+
+```python
+def exhaustive_matching(number):
+    match number:
+        case -1:
+            return '<'
+
+        case 0:
+            return '='
+
+        case 1:
+            return '>'
+
+        case _:
+            return 'dunno'
+
+
+def non_exhaustive_matching(number):
+    match number:
+        case -1:
+            return '<'
+
+        case 0:
+            return '='
+
+        case 1:
+            return '>'
+
+
+print(exhaustive_matching(10))
+print(non_exhaustive_matching(-10))
+```
+
+    $ python py-09-match-exhaustive.py
+    dunno
+    None
+
+Uma função que não retorna nada explicitamente retorna `None` implicitamente.
+
 ## Conclusão
 Vimos neste extenso artigo algumas maneiras de se usar `match`, como ele se compara com o que já conhecemos de outras linguagens - `switch/case`, `if instanceof` do JavaScript - e como ele é dimensões superior a essas estruturas. O pattern matching é uma funcionalidade já presente em muitas linguagens; agora os Pythonistas também poderão usufruir de todo o seu poder e criar aplicações ainda mais incríveis. Para finalizar, você consegue dizer o que a próxima função faz?
 
