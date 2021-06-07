@@ -1,3 +1,5 @@
+(Looking for the English version? Check this other branch [here](https://github.com/Fawers/pattern-matching-in-python/tree/in-english).)
+
 # Pattern Matching finalmente chega no Python 3.10. E daí?
 
 _"Pattern matching"_, ou _"correspondência de padrões"_ como é conhecido no Brasil. Algumas pessoas já conhecem; praticamente todas as que conhecem, amam. Compreensível: pattern matching oferece uma maneira concisa e elegante de verificar e validar valores e objetos em nossos programas.  
